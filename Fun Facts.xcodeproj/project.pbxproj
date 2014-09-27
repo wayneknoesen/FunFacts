@@ -13,6 +13,8 @@
 		47336F2C19D2052500588275 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47336F2B19D2052500588275 /* Images.xcassets */; };
 		47336F2F19D2052500588275 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47336F2D19D2052500588275 /* LaunchScreen.xib */; };
 		47336F3B19D2052500588275 /* Fun_FactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47336F3A19D2052500588275 /* Fun_FactsTests.swift */; };
+		47336F4719D2202100588275 /* FactBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47336F4619D2202100588275 /* FactBook.swift */; };
+		47BDE88419D2F17B009A44AA /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BDE88319D2F17B009A44AA /* ColorWheel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,9 @@
 		47336F3419D2052500588275 /* Fun FactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fun FactsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47336F3919D2052500588275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47336F3A19D2052500588275 /* Fun_FactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fun_FactsTests.swift; sourceTree = "<group>"; };
+		47336F4419D205E700588275 /* ScratchPad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ScratchPad.playground; sourceTree = "<group>"; };
+		47336F4619D2202100588275 /* FactBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactBook.swift; sourceTree = "<group>"; };
+		47BDE88319D2F17B009A44AA /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				47336F2119D2052500588275 /* Fun Facts */,
+				47336F4519D205F700588275 /* Playgrounds */,
 				47336F3719D2052500588275 /* Fun FactsTests */,
 				47336F2019D2052500588275 /* Products */,
 			);
@@ -79,6 +85,8 @@
 			children = (
 				47336F2419D2052500588275 /* AppDelegate.swift */,
 				47336F2619D2052500588275 /* ViewController.swift */,
+				47336F4619D2202100588275 /* FactBook.swift */,
+				47BDE88319D2F17B009A44AA /* ColorWheel.swift */,
 				47336F2819D2052500588275 /* Main.storyboard */,
 				47336F2B19D2052500588275 /* Images.xcassets */,
 				47336F2D19D2052500588275 /* LaunchScreen.xib */,
@@ -110,6 +118,14 @@
 				47336F3919D2052500588275 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47336F4519D205F700588275 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				47336F4419D205E700588275 /* ScratchPad.playground */,
+			);
+			name = Playgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +177,7 @@
 				TargetAttributes = {
 					47336F1E19D2052500588275 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = Q48PCXNS55;
 					};
 					47336F3319D2052500588275 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -212,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47336F4719D2202100588275 /* FactBook.swift in Sources */,
 				47336F2719D2052500588275 /* ViewController.swift in Sources */,
 				47336F2519D2052500588275 /* AppDelegate.swift in Sources */,
+				47BDE88419D2F17B009A44AA /* ColorWheel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Fun Facts/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Fun Facts/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,6 +426,7 @@
 				47336F4019D2052500588275 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47336F4119D2052500588275 /* Build configuration list for PBXNativeTarget "Fun FactsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +435,7 @@
 				47336F4319D2052500588275 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
